@@ -48,6 +48,6 @@ h6::after{
 
 @media (max-width: 575.98px){
     .carousel-indicators{
-    display: none;
+    display: none !important;
     }
 }
