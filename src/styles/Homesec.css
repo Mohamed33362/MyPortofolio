@@ -1,0 +1,119 @@
+.container{
+    background-color: #FFFDF7;
+}
+.img{
+    width: 25%;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.text{
+    width: 50%;
+}
+
+h1{
+    font-size: 25px !important;
+}
+h2{
+    font-size: 20px !important;
+}
+
+h1,h2,p,button{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+span{
+    color: #0d6efd;
+    font-family: josef-bi;
+}
+
+button>a{
+    color: white;
+    font-size: 16px;
+}
+button>a:hover{
+    color: #eee;
+    font-size: 16px;
+}
+
+.for-img{
+    background-color: #e73d1fea !important;
+}
+
+.for-img:first-of-type,.for-img:nth-child(4){
+    width: 5px;
+}
+
+.for-img:last-of-type,.for-img:nth-child(2){
+    height: 5px;
+}
+
+.for-img:last-of-type,.for-img:nth-child(4){
+    top: -30px;
+    right: -30px;
+    left: unset;
+}
+
+.for-img:first-of-type,.for-img:nth-child(2){
+    bottom: -30px;
+    left: -30px;
+    right: unset;
+}
+
+/* Extra Small devices  */
+@media (max-width: 575.98px) {
+.home{
+        flex-direction: column;
+    }
+    .text{
+        width: auto;
+    }
+    .img{
+        width: 73%;
+    }
+    .img > img{
+        width: 100% !important;
+    }
+    h1, h2, p, button{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    button{
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 733px) {
+    .img{
+        width: 40%;
+    }
+    .img img{
+        width: 100%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .img{
+    width: 25%;
+}
+
+img{
+    width: 100%;
+}
+}
